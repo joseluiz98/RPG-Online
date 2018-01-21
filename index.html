@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- Iconic Bootstrap CSS -->
+  <link href="content/open-iconic/css/open-iconic-bootstrap.css" rel="stylesheet">
+
+  <!-- Other includes -->
+  <link rel="stylesheet" href="content/css/home.css">
+  <title>RPG Online</title>
+</head>
+
+<body>
+  <!-- Begin Navbar -->
+  <nav class="navbar nav-tabs navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <a class="navbar-brand" href="">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav mr-5">
+      <li class="nav-item">
+        <!-- Modal Trigger -->
+        <a class="nav-link" data-toggle="modal" data-target="#rp-modal-1">
+          <svg class="rp-account-login-icon">
+            <use xlink:href="content/open-iconic/sprite/open-iconic.svg#account-login" class="icon-account-login"></use>
+          </svg>
+          <span class="rp-login-text">Login</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <!-- Modal -->
+  <div class="modal fade text-light" id="rp-modal-1" tabindex="-1" role="dialog" aria-labelledby="rp-modal-1Label" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h5 class="modal-title" id="rp-modal-1Label">Login or Register Yourself</h5>
+            <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Login Form -->
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address or Username</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email or username">
+                <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer container-fluid">
+            <div class="col-8 pl-0">
+              <span class="d-block"><a href="#" class="nav-link">Forgot your password/email?</a></span>
+              <span class="d-block"><a href="#" class="nav-link">Create a free account</a></span>  
+            </div>
+            <div class="col-4 pr-0">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Login</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Begin Carousel -->
+  <div id="rp-carousel" class="carousel slide mb-4" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#rp-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#rp-carousel" data-slide-to="1"></li>
+        <li data-target="#rp-carousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <!-- Slide 1 (active in page load) -->
+        <div class="carousel-item rp-slide-1 active">
+          <img class="d-block" src="content/images/slide-1.jpg" alt="First slide" style="visibility: hidden;">
+          <div class="carousel-caption d-sd-block">
+              <h5>Lorem Ipsum</h5>
+              <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+            </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item rp-slide-2">
+          <img class="d-block" src="content/images/slide-2.jpg" alt="Second slide" style="visibility: hidden;">
+          <div class="carousel-caption d-sd-block">
+            <h5>Lorem Ipsum</h5>
+            <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item rp-slide-3">
+          <img class="d-block" src="content/images/slide-3.jpg" alt="Third slide" style="visibility: hidden;">
+          <div class="carousel-caption d-sd-block">
+            <h5>Lorem Ipsum</h5>
+            <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#rp-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#rp-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  <!-- End Carousel -->
+    
+  <div class="container text-center">
+    <h3>What We Do</h3><br>
+    <div class="row">
+      <div class="col-sm-4">
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        <p>Current Project</p>
+      </div>
+      <div class="col-sm-4"> 
+        <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        <p>Project 2</p>    
+      </div>
+      <div class="col-sm-4">
+        <div class="card mb-2 bg-success">
+          <div class="card-body">
+              <p>Some text..</p>
+          </div>
+        </div>
+        <div class="card mt-2">
+          <div class="card-body bg-info">
+              <p>Some text..</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><br>
+
+  <footer class="container-fluid text-center bg-dark">
+    <p>© All Rights Reserved</p>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

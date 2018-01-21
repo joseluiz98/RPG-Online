@@ -1,0 +1,83 @@
+@import url("main.css");
+
+/* Estilos Navbar */
+nav .navbar-text {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+.rp-login-logout-icon {
+    color: #fff;
+    width: 16px;
+    height: 16px;
+}
+
+.rp-account-login-icon {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+}
+
+.rp-login-text {
+    vertical-align: super;
+}
+
+.carousel-inner, .carousel-inner h5 {
+    font-size: 1.5em;
+    text-shadow: 4px 1px BLACK;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Indie Flower', cursive !important;
+    font-weight: 500;
+}
+
+/* Estilos Carousel */
+.carousel-inner, .carousel-inner > div {
+    max-height: 450px;
+}
+
+.rp-slide-1 {
+    background-image: url("../images/slide-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.rp-slide-2 {
+    background-image: url("../images/slide-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 20%;
+}
+
+.rp-slide-3 {
+    background-image: url("../images/slide-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+/* Media Queries */
+@media (max-height: 375px){
+    .carousel-inner, .carousel-inner > div {
+        max-height: 250px;
+    }
+}
+
+@media (max-width: 360px){
+    .carousel-inner, .carousel-inner > div {
+        max-height: 200px;
+    }
+}
+
+@media (max-width: 440px){
+    .carousel-inner, .carousel-inner > div {
+        min-height: 400px;
+    }
+}
+
+@media (max-width: 420px){
+    .carousel-inner, .carousel-inner > div {
+        min-height: 300px;
+    }
+}

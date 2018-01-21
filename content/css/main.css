@@ -1,0 +1,54 @@
+/* Font Includes */
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/* General Styles */
+a {
+    cursor: pointer;
+}
+
+body {
+    font-size: 1rem !important;
+    font-family: 'Raleway', sans-serif !important;
+    color: #fff;
+    background-color: #252525;
+}
+
+.bg-dark {
+    background-color: #222 !important;
+}
+
+/* Remove o margin-bottom e bordas padronizados da navbar */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+/* Adiciona um fundo cinza e padding ao rodapé */
+footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    margin: auto;
+    min-height:200px;
+}
+
+/* Modal Styles */
+#emailHelp {
+    color: lightgray;
+}
+
+.rp-forgot-password {
+    position: absolute; left: 0;
+}
+
+/* Media Queries */
+/* Esconde o texto do carousel quando a largura de tela é menor que 600px */
+@media (max-width: 600px) {
+    .carousel-caption {
+        display: none; 
+    }
+}
